@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void insertOnClick (View view){
+    public void insertOnClick (View view){
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(UsersDatabaseContract.UsersTable.COLUMN_NAME, "John Doe");
