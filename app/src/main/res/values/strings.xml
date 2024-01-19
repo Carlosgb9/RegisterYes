@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Register</string>
+    <string name="add">ADD</string>
+    <string name="remove">REMOVE</string>
+    <string name="update">UPDATE</string>
+    <string name="findbyDNI">FIND BY DNI</string>
+    <string name="findbyCycle">FIND BY CYCLE</string>
+    <string name="findbyCourse">FIND BY COURSE</string>
+    <string name="idCard">Id Card</string>
+    <string name="enterId">Enter the id card here</string>
+    <string name="personalData">Personal Data</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="cycle">Cycle</string>
+    <string name="course">Course</string>
+    <string name="first">First</string>
+    <string name="second">Second</string>
+    <string name="missingName">Name is missing.</string>
+    <string name="missingSurname">Surname is missing.</string>
+    <string name="missingIdCard">Id Card is missing</string>
+    <string name="studentAdded">New Student Added</string>
+    <string name="repeatedStudent">This student already exists</string>
+    <string name="studentDeleted">Student has been deleted</string>
+    <string name="notFoundDelete">Error deleting, student not found</string>
+    <string name="notFoundUpdate">Error updating, student not found</string>
+    <string name="studentUpdate">Student has been updated</string>
 </resources>

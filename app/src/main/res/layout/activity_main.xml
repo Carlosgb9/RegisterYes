@@ -8,7 +8,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:text="TextView"
+                android:text="@string/idCard"
                 android:textSize="20sp" />
 
             <EditText
@@ -30,8 +34,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Name" />
+                android:hint="@string/enterId"
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/tvData"
@@ -39,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:text="TextView"
+                android:text="@string/personalData"
                 android:textSize="20sp" />
 
             <EditText
@@ -47,16 +51,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Name" />
+                android:hint="@string/name"
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/etSurname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Name" />
+                android:hint="@string/surname"
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/tvCycle"
@@ -64,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:text="TextView"
+                android:text="@string/cycle"
                 android:textSize="20sp" />
 
             <Spinner
@@ -78,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:text="TextView"
+                android:text="@string/course"
                 android:textSize="20sp" />
 
             <RadioGroup
@@ -90,13 +94,14 @@
                     android:id="@+id/rbFirst"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:checked="true"
+                    android:text="@string/first" />
 
                 <RadioButton
                     android:id="@+id/rbSecond"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="@string/second" />
             </RadioGroup>
 
             <TableLayout
@@ -104,7 +109,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:stretchColumns="0,1,2">
+                android:gravity="center">
 
                 <TableRow
                     android:layout_width="match_parent"
@@ -115,8 +120,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10px"
-                        android:onClick="insertOnClick"
-                        android:text="Button"
+                        android:layout_weight="1"
+                        android:text="@string/add"
                         app:cornerRadius="15px" />
 
                     <Button
@@ -124,7 +129,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10px"
-                        android:text="Button"
+                        android:layout_weight="1"
+                        android:text="@string/remove"
                         app:cornerRadius="15px" />
 
                     <Button
@@ -132,7 +138,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10px"
-                        android:text="Button"
+                        android:layout_weight="1"
+                        android:text="@string/update"
                         app:cornerRadius="15px" />
                 </TableRow>
 
@@ -145,7 +152,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10px"
-                        android:text="Button"
+                        android:layout_weight="1"
+                        android:text="@string/findbyDNI"
                         app:cornerRadius="15px" />
 
                     <Button
@@ -153,7 +161,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10px"
-                        android:text="Button"
+                        android:layout_weight="1"
+                        android:text="@string/findbyCycle"
                         app:cornerRadius="15px" />
 
                     <Button
@@ -161,7 +170,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10px"
-                        android:text="Button"
+                        android:layout_weight="1"
+                        android:text="@string/findbyCourse"
                         app:cornerRadius="15px" />
                 </TableRow>
 
